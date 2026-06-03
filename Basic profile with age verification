@@ -1,0 +1,21 @@
+# THE PROFILE PAGE PROGRAM§
+print(f"\n{'*'*3} Welcome to MySpace! {'*'*3}")
+print()
+name=input("Type Name: ")
+print()
+while True:
+    age=input("what is your age")
+    print()
+    if age.isdigit():
+        age=int(age)
+        break
+    else: print(f"H, Numbers only")
+    print()
+if age <= 17:
+    print("\n=== Access Denied Kid, Back Off ====\n")
+    print()
+if age >= 18:
+    print(f"===== Welcome =====")
+    print()
+    print(f"Hi {name}, you are {age} years old")
+    print(f"Good job {age} {name}")
